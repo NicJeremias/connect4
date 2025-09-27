@@ -24,7 +24,7 @@ function createBoard() {
   }
 }
 
-
+//
 // Drop a piece into the column
 function dropPiece(col) {
   let emptyRow = -1;
@@ -44,7 +44,7 @@ function dropPiece(col) {
 
   // Animate dropping of the piece
   const cellElement = document.querySelector(`.cell[data-row="${emptyRow}"][data-col="${col}"]`);
-  const pieceElement = document.createElement('div');
+  const pieceElement = document.createElement('div');where
   pieceElement.classList.add('piece');
   pieceElement.style.backgroundColor = currentPlayer === 1 ? 'red' : 'yellow';
   cellElement.appendChild(pieceElement);
@@ -64,7 +64,7 @@ function dropPiece(col) {
   if (checkWin(emptyRow, col)) {
     setTimeout(() => {
       if(currentPlayer == 1){
-        alert(p1+` wins!`);
+        alert(p1+` wins!`); 
       }
       else if(currentPlayer == 2){
         alert(p2+` wins!`);
