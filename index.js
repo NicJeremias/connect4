@@ -111,7 +111,7 @@ function checkWin(row, col) {
       }
     }
     if (count >= 4) {
-      // Update scores
+      // Update scores 
       if (currentPlayer === 1) {
         x++;
         document.getElementById("score").innerHTML =p1+" wins: " + x + "    " + p2+" wins: " + y;
