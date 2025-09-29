@@ -95,8 +95,6 @@ function renderBoard() {
   }, 3000); // 3000 milliseconds = 3 seconds
 }
 
-let x = 0;
-let y = 0;
 function checkWin(row, col) {
   const directions = [[1, 0], [0, 1], [1, 1], [1, -1]];
   for (const [dx, dy] of directions) {
